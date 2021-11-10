@@ -1,7 +1,7 @@
 import { PDFPage } from "pdf-lib";
-import Form from "base_classes/Form";
-import Page from "base_classes/Page";
-import { pixelsToUserSpace } from "src/utils";
+import Form from "~base_classes/Form";
+import Page from "~base_classes/Page";
+import { pixelsToUserSpace } from "~/utils";
 
 import Patient_Info from "./sections/1_Patient_Info";
 

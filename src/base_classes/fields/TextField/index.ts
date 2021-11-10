@@ -1,6 +1,6 @@
-import Page from "base_classes/Page";
-import _Field from "base_classes/_Field";
-import { labelLeftMarginWidth } from "src/utils";
+import Page from "~base_classes/Page";
+import _Field from "~base_classes/_Field";
+import { labelLeftMarginWidth } from "~/utils";
 
 class TextField extends _Field {
   constructor(page: Page, xOrigin: number, yOrigin: number, label: string) {

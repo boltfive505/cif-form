@@ -1,7 +1,7 @@
-import _PageArea from "base_classes/_PageArea";
-import Page from "base_classes/Page";
+import _PageArea from "~base_classes/_PageArea";
+import Page from "~base_classes/Page";
 import { rgb } from "pdf-lib";
-import { pixelsToUserSpace } from "src/utils";
+import { pixelsToUserSpace } from "~/utils";
 
 interface Offset {
   x: number | 0;

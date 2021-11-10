@@ -1,6 +1,6 @@
-import Page from "base_classes/Page";
-import Section from "base_classes/Section";
-import { pixelsToUserSpace, sectionsGapHeight, labelHeight } from "src/utils";
+import Page from "~base_classes/Page";
+import Section from "~base_classes/Section";
+import { pixelsToUserSpace, sectionsGapHeight, labelHeight } from "~/utils";
 
 import Patient_Profile from "./subsections/1_Patient_Profile";
 

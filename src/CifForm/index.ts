@@ -1,6 +1,6 @@
 import { PDFDocument, StandardFonts, PDFFont, RGB, rgb } from "pdf-lib";
 import fs from "fs";
-import Form from "base_classes/Form";
+import Form from "~base_classes/Form";
 import CifPage1 from "./pages/CifPage1";
 
 interface CifFormOptions {

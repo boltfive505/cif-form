@@ -1,6 +1,6 @@
-import Page from "base_classes/Page";
-import _Field from "base_classes/_Field";
-import { labelLeftMarginWidth } from "src/utils";
+import Page from "~base_classes/Page";
+import _Field from "~base_classes/_Field";
+import { labelLeftMarginWidth } from "~/utils";
 
 interface CheckValue {
   value: string;

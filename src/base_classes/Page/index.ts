@@ -1,6 +1,6 @@
 import { PDFPage } from "pdf-lib";
 import Form from "../Form";
-import { labelFontSize } from "src/utils";
+import { labelFontSize } from "~/utils";
 
 class Page {
   form: Form;

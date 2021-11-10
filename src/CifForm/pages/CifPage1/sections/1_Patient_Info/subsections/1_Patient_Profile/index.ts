@@ -1,14 +1,14 @@
-import Page from "base_classes/Page";
-import Section from "base_classes/Section";
-import TextField from "base_classes/fields/TextField";
-import CheckField from "base_classes/fields/CheckField";
+import Page from "~base_classes/Page";
+import Section from "~base_classes/Section";
+import TextField from "~base_classes/fields/TextField";
+import CheckField from "~base_classes/fields/CheckField";
 import moment from "moment";
 import {
   pixelsToUserSpace,
   labelHeight,
   formThirthWidth,
   inputHeight,
-} from "src/utils";
+} from "~/utils";
 
 interface PatientProfileValues {
   lastName: string;
