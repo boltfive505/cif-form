@@ -24,7 +24,9 @@
     "baseUrl": "./src",
     "paths": {
       "~/*": ["./*"],
-      "~base_classes/*": ["./base_classes/*"]
+      "~cif-form": ["./cif-form"],
+      "~field-classes": ["./field-classes"],
+      "~field-classes/*": ["./field-classes/*"]
     }
   },
   "exclude": ["node_modules", "lib", "**/__tests__/*"]

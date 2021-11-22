@@ -5,7 +5,8 @@ const plugins = [
       root: ["./src"],
       alias: {
         "~": ["./src/"],
-        "~base_classes": ["./src/base_classes/"],
+        "~cif-form": ["./src/cif-form/"],
+        "~field-classes": ["./src/field-classes/"],
       },
       extensions: [".js", ".ts", ".jsx", ".tsx"],
     },
