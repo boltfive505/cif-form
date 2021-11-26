@@ -25,6 +25,7 @@
     "paths": {
       "~/*": ["./*"],
       "~cif-form": ["./cif-form"],
+      "~cif-form/*": ["./cif-form/*"],
       "~field-classes": ["./field-classes"],
       "~field-classes/*": ["./field-classes/*"]
     }

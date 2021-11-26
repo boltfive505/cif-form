@@ -8,6 +8,7 @@ class SelectField<T> {
   }
 
   select(option?: T) {
+    if (!option) return;
     this.field.select(new String(option).toString());
   }
 }

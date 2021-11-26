@@ -1,6 +1,6 @@
 import { PDFDocument } from "pdf-lib";
 import fs from "fs";
-import CifForm from "./classes";
+import CifForm from "./cif-form";
 
 export const loadCifForm = async (): Promise<CifForm> => {
   const pdfBytes = fs.readFileSync(__dirname + "/CIF_-_Version_9_fillable.pdf");
