@@ -278,24 +278,24 @@ class CaseInvestigationDetailsSection {
     if (values.vaccinationInfo) {
       values.vaccinationInfo.forEach((item, index) => {
         this.fields.vaccinationInfo[index].dateOfVaccination.setText(
-          formatDate(item.dateOfVaccination)
+          formatDate(item?.dateOfVaccination)
         );
         this.fields.vaccinationInfo[index].nameOfVaccine.setText(
-          item.nameOfVaccine
+          item?.nameOfVaccine
         );
-        if (item.doseNumber) {
+        if (item?.doseNumber) {
           this.fields.vaccinationInfo[index].doseNumber.setText(
-            numberToOrdinal(item.doseNumber)
+            numberToOrdinal(item?.doseNumber)
           );
         }
         this.fields.vaccinationInfo[index].vaccinationCenterFacility.setText(
-          item.vaccinationCenterFacility
+          item?.vaccinationCenterFacility
         );
         this.fields.vaccinationInfo[index].regionOfHealthFacility.setText(
-          item.regionOfHealthFacility
+          item?.regionOfHealthFacility
         );
         this.fields.vaccinationInfo[index].adverseEvents.select(
-          item.adverseEvents
+          item?.adverseEvents
         );
       });
     }
@@ -444,32 +444,32 @@ class CaseInvestigationDetailsSection {
       if (values.labInfo.labResultCollection) {
         values.labInfo.labResultCollection.forEach((item, index) => {
           this.fields.labInfo.labResultCollection[index].dateCollected.setText(
-            formatDate(item.dateCollected)
+            formatDate(item?.dateCollected)
           );
           this.fields.labInfo.labResultCollection[
             index
-          ].dateResultReleased.setText(formatDate(item.dateResultReleased));
+          ].dateResultReleased.setText(formatDate(item?.dateResultReleased));
           this.fields.labInfo.labResultCollection[index].laboratory.setText(
-            item.laboratory
+            item?.laboratory
           );
           this.fields.labInfo.labResultCollection[index].testType.select(
-            item.testType
+            item?.testType
           );
           this.fields.labInfo.labResultCollection[index].antigenReason.setText(
-            item.antigenReason
+            item?.antigenReason
           );
           this.fields.labInfo.labResultCollection[
             index
-          ].antigenBrandOfKit.setText(item.antigenBrandOfKit);
+          ].antigenBrandOfKit.setText(item?.antigenBrandOfKit);
           this.fields.labInfo.labResultCollection[
             index
-          ].testTypeOtherValue.setText(item.testTypeOtherValue);
+          ].testTypeOtherValue.setText(item?.testTypeOtherValue);
           this.fields.labInfo.labResultCollection[index].results.select(
-            item.results
+            item?.results
           );
           this.fields.labInfo.labResultCollection[
             index
-          ].resultsOtherValue.setText(item.resultsOtherValue);
+          ].resultsOtherValue.setText(item?.resultsOtherValue);
         });
       }
     }

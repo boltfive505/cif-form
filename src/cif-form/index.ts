@@ -25,6 +25,11 @@ class CifForm {
   constructor(pdfDoc: PDFDocument) {
     this.pdfDoc = pdfDoc;
 
+    // remove clear all button
+    const form = this.pdfDoc.getForm();
+    const clearAllButton = form.getButton("Clear All Fields");
+    form.removeField(clearAllButton);
+
     this.sections = {
       header: new HeaderSection(this),
       patientInfo: new PatientInfoSection(this),
@@ -56,11 +61,6 @@ class CifForm {
 
   async save(): Promise<Uint8Array> {
     const form = this.pdfDoc.getForm();
-
-    // remove clear all button
-    const clearAllButton = form.getButton("Clear All Fields");
-    form.removeField(clearAllButton);
-
     // make fields read-only
     form.flatten();
 

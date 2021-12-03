@@ -147,7 +147,7 @@ export interface LabResultCollectionFields {
   antigenBrandOfKit: TextField;
   testTypeOtherValue: TextField;
   results: RadioField<
-    "Normal" | "Positive" | "Negative" | "Equivocal" | "Others"
+    "Pending" | "Positive" | "Negative" | "Equivocal" | "Others"
   >;
   resultsOtherValue: TextField;
 }
@@ -297,6 +297,6 @@ export interface LabResultCollectionValues {
   antigenReason?: string;
   antigenBrandOfKit?: string;
   testTypeOtherValue?: string;
-  results?: "Normal" | "Positive" | "Negative" | "Equivocal" | "Others";
+  results?: "Pending" | "Positive" | "Negative" | "Equivocal" | "Others";
   resultsOtherValue?: string;
 }

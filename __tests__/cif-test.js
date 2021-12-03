@@ -13,6 +13,9 @@ const run = async () => {
       contactNumberOfInterviewer: "1213123",
       existingCase: {
         notApplicable_newCase: true,
+        notApplicable_unknown: true,
+        updateSymptoms: true,
+        updateHealthStatus: true,
         updateLabResult: true,
         others: true,
         othersField: "adsaa",

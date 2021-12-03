@@ -437,23 +437,23 @@ class ContactTracingSection {
               this.fields.travelHistory.localTravel.transportFacility[
                 index
               ].airline_seaVessel_busline_train.setText(
-                item.airline_seaVessel_busline_train
+                item?.airline_seaVessel_busline_train
               );
               this.fields.travelHistory.localTravel.transportFacility[
                 index
-              ].flight_vessel_busNo.setText(item.flight_vessel_busNo);
+              ].flight_vessel_busNo.setText(item?.flight_vessel_busNo);
               this.fields.travelHistory.localTravel.transportFacility[
                 index
-              ].placeOfOrigin.setText(item.placeOfOrigin);
+              ].placeOfOrigin.setText(item?.placeOfOrigin);
               this.fields.travelHistory.localTravel.transportFacility[
                 index
-              ].departureDate.setText(formatDate(item.departureDate));
+              ].departureDate.setText(formatDate(item?.departureDate));
               this.fields.travelHistory.localTravel.transportFacility[
                 index
-              ].destination.setText(item.destination);
+              ].destination.setText(item?.destination);
               this.fields.travelHistory.localTravel.transportFacility[
                 index
-              ].dateOfArrival.setText(formatDate(item.dateOfArrival));
+              ].dateOfArrival.setText(formatDate(item?.dateOfArrival));
             }
           );
         }
@@ -462,9 +462,9 @@ class ContactTracingSection {
     // persons with patient
     if (values.personsWithPatient) {
       values.personsWithPatient.forEach((item, index) => {
-        this.fields.personsWithPatient[index].name.setText(item.name);
+        this.fields.personsWithPatient[index].name.setText(item?.name);
         this.fields.personsWithPatient[index].contactNumber.setText(
-          item.contactNumber
+          item?.contactNumber
         );
       });
     }
